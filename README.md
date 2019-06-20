@@ -2,6 +2,9 @@
 
 <img src="imgs/viromelab.png" alt="ViromeLab" style="float: left; margin-right: 10px;" />
 
+Department of Virology, University of Helsinki. <br>
+Department of Forensics, University of Helsinki. <br>
+Institute of Electronics and Informatics Engineering of Aveiro, University of Aveiro. <br>
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
