@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to ViromeLab
+
+<img src="imgs/viromelab.png" alt="ViromeLab" style="float: left; margin-right: 10px;" />
 
 You can use the [editor on GitHub](https://github.com/viromelab/web/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
