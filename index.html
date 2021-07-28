@@ -1,23 +1,403 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>ViromeLab</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>EXON Group</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <link href="slidestyle.css" rel="stylesheet">
+
 </head>
-<body>
-<p align="center">
-<img src="imgs/viromelab.png" height="100" alt="ViromeLab" />
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="imgs/logo_bb.png" width="110px" align="left" hspace="20px" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#news">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#members">MEMBERS</a>
+          </li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">PUBLICATIONS</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#tools">TOOLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#datasets">DATASETS</a>
+          </li>
+	  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#join">JOIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+
+<div class="slideshow-xcontainer">
+
+<div class="mySlides">
+  <!--<div class="numbertext">1 / 4</div>-->
+  <img src="img/exon6.jpg" style="width:100%">
+  <!--<div class="text">Caption Text</div>-->
+</div>
+
+<div class="mySlides">
+  <!--<div class="numbertext">2 / 4</div>-->
+  <img src="img/exon3.jpg" style="width:100%">
+  <!--<div class="text">Caption Two</div>-->
+</div>
+
+<div class="mySlides">
+  <img src="img/exon2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <!--<div class="numbertext">3 / 4</div>-->
+  <img src="imgs/tools2.png" style="width:100%">
+  <!--<div class="text">Caption Three</div>-->
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
 <br>
-<!--Department of Virology, University of Helsinki. <br>-->
-<!--Department of Forensic Medicine, University of Helsinki. <br>-->
-<!--Institute of Electronics and Informatics Engineering of Aveiro, University of Aveiro. <br>-->
-<br><b>Software:</b><br><br>
-  <a href="https://github.com/viromelab/tracespipe">TRACESPipe</a>: a next-generation sequencing pipeline for reconstruction<br> and analysis of viral and human-host genomes at multi-organ level
-<br><br><b>Data:</b><br><br>
-<a href="data/B19V.fa">B19V.fa</a>: assembled B19V genome using TRACESPipe.<br>
-<a href="data/JCPyV.fa">JCPyV.fa</a>: assembled JCPyV genome using TRACESPipe.<br>
-<a href="data/HMT.fa">HMT.fa</a>: assembled human mitogenome (host) using TRACESPipe.
-</p>
+
+<div style="text-align:center">
+  <span class="dot" onclick="xcurrentSlide(1)"></span> 
+  <span class="dot" onclick="xcurrentSlide(2)"></span> 
+  <span class="dot" onclick="xcurrentSlide(3)"></span>
+  <span class="dot" onclick="xcurrentSlide(4)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function xcurrentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+	</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="news" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>News</h3>
+	  <p class="lead" align="justify">
+	  <br>
+          <a href="https://twitter.com/exonnews"><img src="imgs/twitternews.png" height="37px"></a><br>
+<a href="https://github.com/exonbits"><img src="imgs/githubnews.png" height="37px"></a>
+	  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="members">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Members</h3>
+          <br>
+          <p class="lead">
+          <div class="col-lg-11 mx-auto">
+            <div class="row" align="center">
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/AP.png" height="100px" alt="" />
+                  <h5 style="color:darkorange">Armando J. Pinho</h5>
+                  <p class="text-muted">Full Professor</p>
+                  <a href="https://orcid.org/0000-0002-9164-0016"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/ajfpinho"><img src="imgs/github_simple.png" height="25px"></a></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/DP.jpeg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Diogo Pratas</h5>
+                  <p class="text-muted">Auxilliary Researcher</p>
+                  <a href="http://orcid.org/0000-0003-1176-552X"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/dxpratas"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/pratas"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/JS.jpg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Jorge M. Silva</h5>
+                  <p class="text-muted">PhD Student</p>
+                  <a href="https://orcid.org/0000-0002-6331-6091"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/MiguelFSilva1"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/jorgeMFS"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>  
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/MS.jpg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Milton Silva</h5>
+                  <p class="text-muted">MS Student</p>
+                  <a href="http://orcid.org/0000-0002-7535-4933"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/miltondts"><img src="imgs/github_simple.png" height="25px"></a></i></a>
+                </div>
+              </div>
+            </div> 
+          </div> 
+          <div class="col-lg-11 mx-auto">
+<div class="row" align="center">
+<p><br></p>
+</div>
+          </div>
+          <div class="col-lg-11 mx-auto">
+            <div class="row" align="center">
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/SM.jpeg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Morteza Hosseini</h5>
+                  <p class="text-muted">Visiting<br>Collaborator</p>
+                  <a href="https://orcid.org/0000-0001-8962-8985"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/smortezah"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/MoriHosseini1"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/JRA.jpg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Joao R. Almeida</h5>
+                  <p class="text-muted">PhD student<br>Collaborator</p>
+                  <a href="https://orcid.org/0000-0003-0729-2264"><img src="imgs/orcid_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/joaorafaelalmeida"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/JoaoRafAlmeida"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/AL.jpg" height="100px" alt="" />
+                  <h5 style="color:darkorange">Alexandre Louren&ccedil;o</h5>
+                  <p class="text-muted">MS Student</p>
+                  <a href="https://github.com/"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>  
+              <div class="col-lg-3">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="imgs/TF.png" height="100px" alt="" />
+                  <h5 style="color:darkorange">Tiago Fonseca</h5>
+                  <p class="text-muted">MS Student</p>
+                  <a href="https://github.com/tiagof1993"><img src="imgs/github_simple.png" height="25px"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/TiagoFo87664862"><img src="imgs/twitter_logo.png" height="24px"></a></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Projects</h3>
+          <p align="justify">
+          Our group develops new mathematical and computational models, including their efficient implementation into computer programs for biomedical, anthropological, and coding applications. We address both statistical and algorithmic natures creating innovative data mining and machine learning methodologies. We are currently working on projects such as the development of efficient biological data compression tools, reconstruction and analysis of viral genomes, identification of specific viral signatures, variation quantification, and metagenomic analysis of ancient DNA samples. The following word tree summarizes our works
+          </p>
+          <p align="center">
+          <img src="imgs/wordcloud.jpg" height="420px">
+          </p>
+          <!--<p class="lead">SMASH:</p>
+          <p class="lead">
+          <ul>
+            <li>Map and visualization of genomic rearrangements.</li>
+          </ul>
+          </p>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Selected recent publications</h3>
+          <p class="lead">
+          <ul>
+		  <li><h6 style="color:darkgreen"><b>Efficient DNA sequence compression with neural networks</b>. <a href="https://doi.org/10.1093/gigascience/giaa119">GigaScience, 2020.</a></h6><h6 style="color:black;font-weight:normal">M. Silva, D. Pratas, A. J. Pinho.</h6></li>
+		  <li><h6 style="color:darkgreen"><b>Persistent minimal sequences of SARS-CoV-2</b>. <a href="https://doi.org/10.1093/bioinformatics/btaa686">Bioinformatics, 2020.</a></h6><h6 style="color:black;font-weight:normal">D. Pratas, J. M. Silva.</h6></li>
+		  <li><h6 style="color:darkgreen"><b>A hybrid pipeline for reconstruction and analysis of viral genomes at multi-organ level</b>. <a href="https://academic.oup.com/gigascience/article/9/8/giaa086/5894824">GigaScience, 2020.</a></h6><h6 style="color:black;font-weight:normal">D. Pratas, M. Toppinen, L. Pyöriä, K. Hedman, A. Sajantila, M. F. Perdomo.</h6></li>
+		  <li><h6 style="color:darkgreen"><b>The landscape of persistent human DNA viruses in femoral bone</b>. <a href="https://doi.org/10.1016/j.fsigen.2020.102353">Forensic Science International: Genetics, 2020.</a></h6><h6 style="color:black;font-weight:normal">M. Toppinen, D. Pratas, E. Väisänen, M. Söderlund-Venermo, K. Hedman, M. F. Perdomo, A. Sajantila.</h6></li>
+<li><h6 style="color:darkgreen"><b>GTO: A toolkit to unify pipelines in genomic and proteomic research</b>. <a href="https://doi.org/10.1016/j.softx.2020.100535">SoftwareX, 2020.</a></h6><h6 style="color:black;font-weight:normal">J. R. Almeida, A. J. Pinho, J. L. Oliveira, O. Fajarda, D. Pratas</h6></li>
+		  <li><h6 style="color:darkgreen"><b>Smash++: an alignment-free and memory-efficient tool to find genomic rearrangements</b>. <a href="https://doi.org/10.1093/gigascience/giaa048">GigaScience, 2020.</a></h6><h6 style="color:black;font-weight:normal">M. Hosseini, D. Pratas, B. Morgenstern, A. J. Pinho.</h6></li>
+		  <li><h6 style="color:darkgreen"><b>Cryfa: a secure encryption tool for genomic data</b>. <a href="https://doi.org/10.1093/bioinformatics/bty645">Bioinformatics, 2019.</a></h6><h6 style="color:black;font-weight:normal">M. Hosseini, D. Pratas, A. J. Pinho.</h6></li>
+            <!--<li><h6 style="color:darkgreen">Metagenomic Composition Analysis of an Ancient Sequenced Polar Bear Jawbone from Svalbard.</h6><h6 style="color:black;font-weight:normal">D. Pratas, M. Hosseini, G. Grilo, A. J. Pinho, R. M. Silva, T. Caetano, J. Carneiro, F. Pereira.</h6><h6 style="color:blue">Genes, 2018.</h6></li>
+            <li><h6 style="color:darkgreen">An alignment-free method to find and visualise rearrangements between pairs of DNA sequences.</h6><h6 style="color:black;font-weight:normal">D. Pratas, R. M. Silva, A. J. Pinho, P. J. S. G. Ferreira.</h6><h6 style="color:blue">Scientific Reports, 2015.</h6></li>
+            <li><h6 style="color:darkgreen">Three minimal sequences found in Ebola virus genomes and absent from human DNA.</h6><h6 style="color:black;font-weight:normal">R. M. Silva, D. Pratas, L. Castro, A. J. Pinho, P. J. S. G. Ferreira.</h6><h6 style="color:blue">Bioinformatics, 2015.</h6></li>
+            <li><h6 style="color:darkgreen">MFCompress: a compression tool for FASTA and multi-FASTA data.</h6><h6 style="color:black;font-weight:normal">A. J. Pinho, D. Pratas.</h6><h6 style="color:blue">Bioinformatics, 2014.</h6></li>
+            <li><h6 style="color:darkgreen">GReEn: a tool for efficient compression of genome resequencing data.</h6><h6 style="color:black;font-weight:normal">A. J. Pinho, D. Pratas, S. P. Garcia.</h6><h6 style="color:blue">Nucleic Acids Research, 2012.</h6></li>-->
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Developed tools</h3>
+          <p class="lead" align="center">
+          <br>
+          <img src="imgs/tools4.png" alt="" height="190px" />
+          <br><br>
+          <ul>
+		  <li><a href="https://github.com/cobilab/eagle2"><b>EAGLE2</b></a>: an ultra-fast and alignment-free tool to compute minimal sequences from viral genomes that are absent from hosts.</li> 
+		  <li><a href="https://github.com/cobilab/geco3"><b>GeCo3</b></a>: a series of efficient compressors (GeCo, GeCo2, GeCo3) for genomic sequences (reference and reference-free approaches).</li> 
+		  <li><a href="https://github.com/cobilab/jarvis2"><b>JARVIS2</b></a>: a series of extremely efficient reference-free data compressors for DNA sequences, FASTA, and FASTQ data. </li>
+		  <li><a href="https://github.com/viromelab/tracespipe"><b>TRACESPipe</b></a>: an automatic pipeline for reconstruction and analysis of viral and human-host genomes at multi-organ level.</li>
+		  <li><a href="https://github.com/cobilab/falcon"><b>FALCON-meta</b></a>: a high-sensitive and ultra-fast tool for analysis of metagenomic samples using a reference multi-FASTA database.</li>
+		  <li><a href="https://github.com/cobilab/cryfa"><b>Cryfa</b></a>: an ultra-fasta secure encryption tool for genomic data that is able to compact FASTA and FASTQ data.</li>
+		  <li><a href="https://github.com/cobilab/smash"><b>Smash</b></a>: an alignment-free tool to find and visualize rearrangements in pairs of DNA sequences (FASTA format).</li>
+		  <li><a href="https://github.com/cobilab/chester"><b>Chester</b></a>: a memory efficient tool to map and visualize evolutionary regions in multiple genomes (FASTA and FASTQ format).</li> 
+      		  <li><a href="https://cobilab.github.io/gto/"><b>GTO</b></a>: a complete toolkit for analysis of genomic and proteomic data providing pipe support for easy integration with existing tools.</li>
+		  <li><a href="https://github.com/cobilab/ac2"><b>AC2</b></a>: a series of efficient compressors (AC, AC2) for Amino Acid sequences (reference and reference-free approaches).</li>
+		  <li><a href="https://bioinformatics.ua.pt/software/mfcompress"><b>MFCompress</b></a>: a fast and efficient compressor for FASTA and multi-FASTA data</li>
+		  <li><a href="https://bioinformatics.ua.pt/software/green"><b>GReEn</b></a>: an fast and light-weight reference-based compressor for resequencing data.</li> 
+          </ul>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section id="datasets" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Datasets</h3>
+	  <p align="justify">
+In order to promote the development of efficient computational models for the minimal lossless representation of DNA and Amino Acid sequences, we hold two benchmarks. The latest top developments involve the use of neural networks for context mixing and cache hashes in weighted stochastic repeats models. Please, click on the following images to download the sequence data and benchmark with a new compression algorithm.
+          </p>
+	  <br>
+          <p class="lead" align="center">
+	  <a href="http://sweet.ua.pt/pratas/datasets/DNACorpus.zip"><img src="imgs/dna_dataset.png" height="140px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://sweet.ua.pt/pratas/datasets/AminoAcidsCorpus.zip"><img src="imgs/protein_dataset.png" height="140px"></a>
+	  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+       
+
+  <section id="join" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Join the Group</h3>
+          <p align="justify">
+           The EXON group is open to Researchers, Pos-docs, Ph.D. students, Master students and also undergraduate students. Informal inquiries are welcome. Please, send a CV and describe your interests in an email to pratas (at) ua.pt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h3>Contact</h3>
+          <p class="lead"><h6>
+          IEETA, University of Aveiro<br>
+          Campus Universitário Santiago, 3810-193<br>
+          Aveiro, Portugal<br><br>
+          Phone: +351 234 370 506<br></h6>
+	  <br>
+          </p><p align="center">
+          <img src="imgs/house.png" height="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="imgs/AVR.png" height="42px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark">
+    <div class="container">
+	    <p class="m-0 text-center text-white"><small>&copy; EXON Group 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.ua.pt">UNIVERSITY OF AVEIRO</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.ua.pt/deti/">DETI</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://wiki.ieeta.pt/wiki/index.php/Main_Page">IEETA</a></small></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
 </body>
-</html> 
 
-
+</html>
